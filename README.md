@@ -56,3 +56,12 @@ void onPlayer(jjPLAYER@ play)
     init(play);
 }
 ```
+
+## Alternative approach
+ALternatively, to avoid running this tool every time, you can simply use the following `global.as` content:
+```as
+// EXCLUDE Share*
+// EXCLUDE *Cry
+#include "global-logic.as";
+```
+And then create a `global-logic.as` file in the same directory. This way you can edit the `global-logic.as` file without having to run the tool every time.
